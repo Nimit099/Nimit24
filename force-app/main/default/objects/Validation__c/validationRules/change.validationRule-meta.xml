@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>change</fullName>
-    <active>true</active>
-    <errorConditionFormula>$User.Id &lt;&gt; OwnerId</errorConditionFormula>
-    <errorDisplayField>birthdate__c</errorDisplayField>
-    <errorMessage>you cant change it</errorMessage>
-</ValidationRule>

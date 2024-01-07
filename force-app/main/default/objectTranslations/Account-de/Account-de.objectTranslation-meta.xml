@@ -8,10 +8,6 @@
         <label></label>
         <name>Account1</name>
     </fieldSets>
-    <quickActions>
-        <label></label>
-        <name>New</name>
-    </quickActions>
     <recordTypes>
         <description>Ein Account, der einen Haushalt mit mindestens einer Einzelperson enthält</description>
         <label>Haushalt-Account</label>

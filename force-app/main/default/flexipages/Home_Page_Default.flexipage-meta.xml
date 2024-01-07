@@ -3,17 +3,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>fieldSet</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>objectName</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>recordId</name>
-                </componentInstanceProperties>
-                <componentName>obj</componentName>
-                <identifier>c_obj</identifier>
+                <componentName>home:heroChart</componentName>
+                <identifier>home_heroChart</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -21,10 +12,82 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <name>Facet-01f42925-da3b-484f-9836-6107b437c8da</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>Facet-be21b862-5369-46fd-a76f-e41cedcfd8b4</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>Facet-45ed593e-5fb4-4f49-88c5-2040f36160cc</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>integration_task1</componentName>
-                <identifier>c_integration_task1</identifier>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-01f42925-da3b-484f-9836-6107b437c8da</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.collaborate</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-be21b862-5369-46fd-a76f-e41cedcfd8b4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.attachments</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-45ed593e-5fb4-4f49-88c5-2040f36160cc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.crisisCenterNotes</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-cb4e23d6-2a20-47e5-9364-33226025aef1</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>runtime_approval_process:pendingApprovalCard</componentName>
+                <identifier>runtime_approval_process_pendingApprovalCard</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>tabs</name>
+                    <value>Facet-cb4e23d6-2a20-47e5-9364-33226025aef1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tabset</componentName>
+                <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -34,8 +97,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>integration_task_2</componentName>
-                <identifier>c_integration_task_2</identifier>
+                <componentName>runtime_sales_activities:todayTaskContainer</componentName>
+                <identifier>runtime_sales_activities_todayTaskContainer</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -45,8 +108,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>aLL_LWC_TASK</componentName>
-                <identifier>c_aLL_LWC_TASK</identifier>
+                <componentName>home:eventContainer</componentName>
+                <identifier>home_eventContainer</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
@@ -15,7 +15,7 @@
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>approved_by_manager</name>
+                <name xsi:nil="true"/>
                 <type>Alert</type>
             </action>
         </approvalActions>
@@ -34,21 +34,21 @@
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <finalApprovalActions>
         <action>
-            <name>final_approved</name>
+            <name xsi:nil="true"/>
             <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>final_rejected</name>
+            <name xsi:nil="true"/>
             <type>FieldUpdate</type>
         </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Initial_step</name>
+            <name xsi:nil="true"/>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>

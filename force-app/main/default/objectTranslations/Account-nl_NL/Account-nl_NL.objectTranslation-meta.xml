@@ -8,10 +8,6 @@
         <label></label>
         <name>Account1</name>
     </fieldSets>
-    <quickActions>
-        <label></label>
-        <name>New</name>
-    </quickActions>
     <recordTypes>
         <description>Een Account die een Huishouden met één of meerdere individuen voorstelt</description>
         <label>Huishoudenaccount</label>

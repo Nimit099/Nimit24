@@ -8,10 +8,6 @@
         <label></label>
         <name>Account1</name>
     </fieldSets>
-    <quickActions>
-        <label></label>
-        <name>New</name>
-    </quickActions>
     <recordTypes>
         <description>Una cuenta que representa un hogar que contiene una o más personas.</description>
         <label>Cuenta de hogar</label>

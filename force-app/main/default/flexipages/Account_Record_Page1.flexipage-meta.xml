@@ -224,12 +224,6 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>accord</componentName>
-                <identifier>c_accord</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>sidebartabs</value>

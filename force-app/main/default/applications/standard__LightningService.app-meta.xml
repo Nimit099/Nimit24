@@ -33,61 +33,9 @@
     <tabs>standard-Incident</tabs>
     <tabs>standard-Problem</tabs>
     <tabs>standard-ChangeRequest</tabs>
-    <tabs>Student__c</tabs>
-    <tabs>Validation__c</tabs>
-    <tabs>Nstudent__c</tabs>
-    <tabs>Nattendance__c</tabs>
-    <tabs>Nbooks__c</tabs>
-    <tabs>Risk_calculation__c</tabs>
-    <tabs>Signin__c</tabs>
-    <tabs>Error_Log__c</tabs>
-    <tabs>B_D_Account__c</tabs>
-    <tabs>Person__c</tabs>
-    <tabs>Transaction__c</tabs>
-    <tabs>Transfer__c</tabs>
-    <tabs>Teste</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
-        <mappings>
-            <tab>B_D_Account__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Error_Log__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Nattendance__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Nbooks__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Nstudent__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Person__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Risk_calculation__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Signin__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Student__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Teste</tab>
-        </mappings>
-        <mappings>
-            <tab>Transaction__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Transfer__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Validation__c</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>
