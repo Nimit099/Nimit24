@@ -1,0 +1,12 @@
+<apex:page controller="Signin">
+    <apex:form >
+        UserName: <br/><apex:inputText value="{!username}"/><br/>
+        Email: <br/><apex:inputText value="{!useremail}"/><br/>
+        Password: <br/><apex:inputSecret value="{!userpassword}"/><br/>
+            <apex:commandButton value="Sign Up" action="{!signup}"/>
+            <apex:commandLink value="Sign In" action="{!signinpage}"/> 
+<br/>
+            <apex:outputText value="{!trial}"/>
+
+        </apex:form>
+</apex:page>

@@ -1,0 +1,138 @@
+<template>
+    <div>
+        <lightning-card>
+            <div style="display: flex; margin-right: 10px;">
+                <div>
+                    <lightning-button label="Transfer" onclick={showModalBox}>
+                    </lightning-button>
+                </div>
+                <div style="margin-left:10px">
+                    <lightning-button label="Email" onclick={showModalBox}>
+                    </lightning-button>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+       <!-- modal start -->      
+    <template if:true={isShowModal}>
+
+        <!-- I Used SLDS for this code Here is link https://www.lightningdesignsystem.com/components/modals/ --> 
+
+<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+   <div class="slds-modal__container">
+    <!-- modal header start -->
+      <header class="slds-modal__header">
+         <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+            <lightning-icon icon-name="utility:close"
+               alternative-text="close"
+               variant="inverse"
+               size="small" ></lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+         </button>
+         <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Transfer</h2>
+      </header>
+  
+      <!-- modal body start -->
+      <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+        <lightning-record-edit-form object-api-name="Transfer__c">
+            <div style="display: flex;"> 
+                <div style="width: 40%;">
+            <lightning-input-field value={pid1} onchange={person1} field-name="From__c"></lightning-input-field>
+                </div>
+                <div style="width: 40%;">
+            <lightning-input-field value={pid2} onchange={person2} field-name="To__c" title="To"></lightning-input-field>
+                </div>
+            </div>
+            <div style="display: flex;">
+            <lightning-input type="checkbox" onchange={check} label="Cash"></lightning-input>
+            <lightning-input type="checkbox" onchange={check} label="Bank"></lightning-input>
+            <lightning-input type="checkbox" onchange={check} label="Stock"></lightning-input>
+            </div>
+            <div style="display: flex; margin-top:5px">
+                <lightning-input type="checkbox" onchange={creditm} label="Credit"></lightning-input>
+                <lightning-input type="checkbox" onchange={creditm} label="Debit"></lightning-input>
+                </div>
+            <div style="width: 50%;">
+            <lightning-input type="currency" required="true" onchange={amountm} label="Amount"></lightning-input>
+            </div>
+            <div style="display: flex;"> 
+                <div style="width: 40%;">
+                    <lightning-input-field value={from} onchange={fromaccm} field-name="FromAccount__c"></lightning-input-field>
+                </div>
+
+                <div style="width: 40%;">
+                    <lightning-input-field value={to} onchange={toaccm} field-name="ToAccount__c"></lightning-input-field>
+                </div>
+                    
+            <!-- <lightning-combobox 
+            label="Bank"
+            
+            placeholder="Bank 1"
+            options={options}
+            onchange={bank1m}
+            ></lightning-combobox>
+                </div>
+                <div style="width: 40%;">
+            <lightning-combobox 
+            label="Bank"
+          
+            placeholder="Bank 2"
+            options={options}
+            onchange={bank2m}
+            ></lightning-combobox> -->
+            
+        </div>
+        </lightning-record-edit-form>
+      </div>
+
+      <!-- modal footer start-->
+      <footer class="slds-modal__footer">
+         <button class="slds-button slds-button_neutral" onclick={save}>Save</button>
+      </footer>
+   
+   </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div>
+</template>
+<!-- modal end -->
+
+       <!-- modal start -->      
+       <template if:true={isShowModalemail}>
+
+        <!-- I Used SLDS for this code Here is link https://www.lightningdesignsystem.com/components/modals/ --> 
+
+<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+   <div class="slds-modal__container">
+    <!-- modal header start -->
+      <header class="slds-modal__header">
+         <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+            <lightning-icon icon-name="utility:close"
+               alternative-text="close"
+               variant="inverse"
+               size="small" ></lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+         </button>
+         <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Email</h2>
+      </header>
+  
+      <!-- modal body start -->
+      <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+
+        <p>To:<lightning-formatted-email value={email}></lightning-formatted-email></p>
+        <lightning-input label="Subject" value={subject} onchange={subjectm} ></lightning-input>
+        <lightning-input-rich-text label="Mail" value={mail} onchange={mailm} variant="bottom-toolbar" ></lightning-input-rich-text>
+
+      </div>
+
+      <!-- modal footer start-->
+      <footer class="slds-modal__footer">
+         <button class="slds-button slds-button_neutral" onclick={save}>Save</button>
+      </footer>
+   
+   </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div>
+</template>
+<!-- modal end -->
+
+</template>

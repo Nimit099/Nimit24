@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>eberhardgrossgasteigerGy40dD0zLzUun2</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>First</label>
+    <navType>Standard</navType>
+    <tabs>Validation__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Student__c</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>Nstudent__c</tabs>
+    <tabs>Nattendance__c</tabs>
+    <tabs>Nbooks__c</tabs>
+    <tabs>Risk_calculation__c</tabs>
+    <tabs>Signin__c</tabs>
+    <tabs>Error_Log__c</tabs>
+    <tabs>B_D_Account__c</tabs>
+    <tabs>Person__c</tabs>
+    <tabs>Transaction__c</tabs>
+    <tabs>Transfer__c</tabs>
+    <tabs>Teste</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>First_UtilityBar</utilityBar>
+</CustomApplication>

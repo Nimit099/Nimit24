@@ -1,0 +1,80 @@
+<aura:component controller="aura_task_3" access="GLOBAL"  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+    <aura:attribute name="showaccount" type="boolean" default="true"/>
+    <aura:attribute name="showcontact" type="boolean" default="false"/>
+    <aura:attribute name="showevent" type="boolean" default="false"/>
+    <aura:attribute name="number" type="String" default="1"/>
+    <aura:attribute name="progress" type="String" default="10"/>
+    <aura:attribute name="accountid" type="String"/>
+    <aura:attribute name="contactid" type="Id"/>
+    <aura:attribute name="assign" type="Id"/>
+    <aura:attribute name="previous" type="Integer" default="1"/>
+    <aura:attribute name="msg" type="String" default=""/>
+   
+    <aura:renderIf isTrue="{!v.showaccount}">
+
+        <lightning:recordEditForm objectApiName="Account">
+            <lightning:messages />
+            <br/>
+            <div class="slds-align_absolute-center">
+            <lightning:inputField  fieldName="Name" class="slds-size--1-of-2 slds-p-horizontal_x-small" aura:id="accName"/></div>
+            <div class="slds-align_absolute-center">
+            <lightning:inputField  fieldName="Phone" class="slds-size--1-of-2 slds-p-horizontal_x-small" aura:id="accPhone"/></div>
+            <div class="slds-align_absolute-center">
+            <lightning:inputField  fieldName="Rating" class="slds-size--1-of-2 slds-p-horizontal_x-small" aura:id="accRating"/></div>
+        
+            <div class="slds-align_absolute-center">
+            &nbsp;<lightning:button  label="Next" onclick="{!c.save}" class="slds-button slds-button--brand slds-align_absolute-center"/></div>
+        </lightning:recordEditForm>
+
+    </aura:renderIf>
+
+
+    <aura:renderIf isTrue="{!v.showcontact}">
+        <lightning:recordEditForm objectApiName="Contact">
+            <lightning:messages />
+            <br/>
+            <div class="slds-align_absolute-center">
+            <lightning:inputField fieldName="FirstName" class="slds-size--1-of-2 slds-p-horizontal_x-small" aura:id="firstname" /></div>
+            <div class="slds-align_absolute-center">
+            <lightning:inputField fieldName="LastName" class="slds-size--1-of-2 slds-p-horizontal_x-small" aura:id="lastname"/></div>
+            <div class="slds-align_absolute-center">
+            <lightning:inputField fieldName="AccountId" class="slds-size--1-of-2 slds-p-horizontal_x-small" aura:id="accountid" disabled="{!v.showcontact}" value="{!v.accountid}"/></div>
+            <div class="slds-align_absolute-center">
+            <lightning:inputField fieldName="Phone" class="slds-size--1-of-2 slds-p-horizontal_x-small" aura:id="phone"/></div>
+
+            <div class="slds-align_absolute-center">
+            <lightning:button label="Previous" onclick="{!c.previous}" class="slds-button"></lightning:button>
+            <lightning:button label="Next" onclick="{!c.save}" class="slds-button slds-button--brand "></lightning:button></div>
+    </lightning:recordEditForm>
+    </aura:renderIf>
+
+
+    <aura:renderIf isTrue="{!v.showevent}">
+
+    <lightning:recordEditForm objectApiName="">
+        <lightning:messages />
+        <br/>
+        <div class="slds-align_absolute-center">
+        <lightning:input aura:id="evtSubject" name="evtSubject" label="Subject" value="Wizard Subject" class="slds-size--1-of-2 slds-p-horizontal_x-small" /><br/></div>
+        <div class="slds-align_absolute-center">
+        <lightning:input aura:id="startdate" type="date" label="StartDate" required="true" class="slds-size--1-of-2 slds-p-horizontal_x-small"/><br/></div>
+        <div class="slds-align_absolute-center">
+        <lightning:input aura:id="enddate" type="date" label="EndDate" required="true" class="slds-size--1-of-2 slds-p-horizontal_x-small"/><br/></div>
+        <div class="slds-align_absolute-center">
+        <lightning:input aura:id="whoid" type="Id" label="RelatedContact" value="{!v.contactid}" disabled="{!v.showevent}" class="slds-size--1-of-2 slds-p-horizontal_x-small"/><br/></div>
+        <div class="slds-align_absolute-center">
+        <lightning:input aura:id="assign" type="Id" label="Assigned To" disabled="{!v.showevent}" value="0055g00000FvUkhAAF"  class="slds-size--1-of-2 slds-p-horizontal_x-small"/><br/><br/></div>
+        <div class="slds-align_absolute-center">
+        &nbsp;<lightning:input label="All Day Event" aura:id="alldayevent" disabled="{!v.showevent}" name="alldayevent" type="checkbox" class="slds-size--1-of-2 slds-p-horizontal_x-small" checked="{!v.showevent}"/><br/></div>
+      
+      <div class="slds-align_absolute-center">
+        <lightning:button label="Previous" onclick="{!c.previous}" class=""></lightning:button>
+        <lightning:button label="Save" onclick="{!c.save}" class="slds-button slds-button--brand"></lightning:button></div>
+    </lightning:recordEditForm>
+
+    </aura:renderIf>
+<br/>
+    <ui:outputText class="slds-align_absolute-center" aura:id="mydiv" value="{!v.msg}"/>
+    <lightning:progressBar value="{!v.progress}" size="medium" class="slds-p-horizontal_x-small green"/>
+
+</aura:component>

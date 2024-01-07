@@ -1,0 +1,19 @@
+<template>
+    <lightning-card><h1 style="text-align: center; font-style: italic; font-size: large;">{contact}</h1></lightning-card>
+        <template if:true={contrue}>    
+            <lightning-datatable
+                key-field="id"
+                data = {cons}
+                columns={conColumn}
+            ></lightning-datatable>
+        </template>
+        
+    <lightning-card><h1 style="text-align: center; font-style: italic; font-size: large;">{opportunity}</h1></lightning-card>
+        <template if:true={opptrue}>
+            <lightning-datatable
+                key-field="id"
+                data = {opps}
+                columns={oppColumn}
+            ></lightning-datatable>
+        </template>
+</template>

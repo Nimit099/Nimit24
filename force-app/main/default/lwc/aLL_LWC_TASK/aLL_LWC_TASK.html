@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+    <lightning-input type="toggle" label="Task 1" onchange={select} checked={task1}></lightning-input>
+    <lightning-input type="toggle" label="Task 3" onchange={select} checked={task3}></lightning-input>
+    <lightning-input type="toggle" label="Task 4" onchange={select} checked={task4}></lightning-input>
+    <lightning-input type="toggle" label="Task 5" onchange={select} checked={task5}></lightning-input>
+    </lightning-card>
+    <div>
+        <br/>
+        <template if:true={task1}>
+            <c-lwc_task_1></c-lwc_task_1>
+        </template>
+
+        <template if:true={task3}>
+            <c-lwc_task3></c-lwc_task3>
+        </template>
+
+        <template if:true={task4}>
+            <c-lwc_task4></c-lwc_task4>
+        </template>
+
+        <template if:true={task5}>
+            <c-lwc_task5></c-lwc_task5>
+        </template>
+    </div>
+</template>

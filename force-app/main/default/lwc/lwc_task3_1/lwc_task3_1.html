@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <div style="margin-left: 20px;">
+            <lightning-button-menu label="Account" onselect={select}>
+                <template for:each={accounts.data} for:item="acc">
+                    <lightning-menu-item
+                        key={acc.Id}
+                        label={acc.Name}
+                        value={acc.Id}
+                    ></lightning-menu-item>
+                </template>
+            </lightning-button-menu>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,18 @@
+<apex:page controller="day_2">
+    <apex:form >
+        <apex:outputText value="{!alert}"/>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+First Name:<apex:inputText value="{!firstname}"/><br/>
+Last Name:<apex:inputText value="{!lastname}"/><br/>
+Email:<apex:inputText value="{!email}"/><br/>
+Account:<apex:selectList size="1" value="{!accountsid}">
+    <apex:selectOptions value="{!items}"/>
+</apex:selectList>
+<br/>
+Password:<apex:inputSecret value="{!password}"/>
+<apex:commandButton value="Save" action="{!save}"/><br/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

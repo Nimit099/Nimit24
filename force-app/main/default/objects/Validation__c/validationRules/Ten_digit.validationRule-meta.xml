@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ten_digit</fullName>
+    <active>true</active>
+    <errorConditionFormula>Ten_Digit__c &gt; 9999999999</errorConditionFormula>
+    <errorDisplayField>Ten_Digit__c</errorDisplayField>
+    <errorMessage>Number cant increase than 10 count</errorMessage>
+</ValidationRule>

@@ -1,0 +1,37 @@
+<template>
+   <div class="body">
+        <div class="heading"><p>Welcome To SchoolPortal</p></div>
+   </div>
+   <div class="slds-grid slds-gutters buttons">
+        <div class="slds-col shadow" onclick={mstudent}>Student</div>
+        <div onclick={teacher}>
+        <div class="slds-col shadow" onclick={mteacher}>Teacher</div>
+        </div>
+    </div>
+<!-- Ṣtudent -->
+    <template if:true={student}>
+        <div class="student">
+
+        </div>
+    </template>
+<!-- Teacher -->
+    <template if:true={teacher}>
+        <div class="teacher slds-grid slds-gutters">
+            <div class="slds-col labels">
+                <div class="text">First Name: </div>
+                <div class="text">Last Name: </div>
+                <div class="text">Email: </div>
+                <div class="text">Mobile: </div>
+            </div>
+            <div class="slds-col">
+                <div class=""><lightning-input placeholder="First Name" onchange ={mfirstname} class="slds-size_1-of-4 margin"></lightning-input></div>
+                <div class=""><lightning-input placeholder="Last Name" onchange ={mlastname} class=" slds-size_1-of-4 margin"></lightning-input></div>
+                <div class=""><lightning-input placeholder="Email" onchange ={memail} class="slds-size_1-of-4 margin"></lightning-input></div>
+                <div class=""><lightning-input placeholder="Mobile No." onchange ={mmobile} class="slds-size_1-of-4 margin"></lightning-input></div>
+
+            </div>
+        </div>
+        <div class="register_bt" onclick={mregister}>Register</div>
+    </template>
+
+</template>

@@ -1,0 +1,54 @@
+.body{
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    top: 0px; 
+    left: 0px;
+    background: linear-gradient(48deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(2,164,224,1) 52%, rgba(3,206,162,1) 67%, rgba(0,212,255,1) 100%);
+}
+.heading{
+    text-align: center;
+    font-size: 38px;
+    width: fit-content;
+    margin: 3% auto;
+    color: rgba(9,9,121,1);
+    font-family: cursive;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+}
+.buttons{
+    margin: 6% 0px 0px 37%;
+    position: fixed;
+    font-size: 30px;
+}
+.shadow{
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 2px 7px 8px rgb(0 0 0 / 25%);
+}
+.teacher{
+    position: fixed;
+    margin: 13% 0%;
+    width: 80%;
+    height: 60%;
+}
+.margin{
+    margin-left: 51%;
+}
+.text{
+    font-size: 20px;
+    margin-top: 22%;
+    text-align: end;
+}
+.labels{
+    left: 38%;
+    position: absolute;
+}
+.register_bt{
+    position: absolute;
+    top: 141%;
+    left: 50%;
+    padding: 7px;
+    border: 1px solid black;
+    box-shadow: 2px 7px 8px rgb(0 0 0 / 25%);
+    cursor: pointer;
+}

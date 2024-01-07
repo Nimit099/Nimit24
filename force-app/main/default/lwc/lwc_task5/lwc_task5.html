@@ -1,0 +1,55 @@
+<template>
+    <lightning-card>
+        <lightning-input type="Search" value={searchkeyword} field-level-help="Enter First Name to search" onchange={keyword} label="Search First Name" placeholder="Enter First Name" required="true"></lightning-input>
+            <lightning-dual-listbox 
+                name="languages"
+                label="Select Languages"
+                source-label="Available"
+                selected-label="Selected"
+                field-level-help="Select your preferred languages"
+                options={options}
+                onchange={objecttype}
+            ></lightning-dual-listbox>
+        <lightning-button variant="brand" label="Search" title="Search" onclick={search} class="slds-m-left_x-small"></lightning-button>
+    </lightning-card> 
+    <template if:true ={accounttrue}>
+        <lightning-card>
+            <b style="text-align: center;">{Account}</b>
+                <lightning-datatable
+                    key-field="id"
+                    data ={accdata}
+                    columns ={column}>
+                </lightning-datatable>
+        </lightning-card>
+    </template>
+    <template if:true={contacttrue}>
+        <lightning-card>
+            <b style="text-align: center;">{Contacts}</b>
+                <lightning-datatable
+                    key-field="id"
+                    data = {condata}
+                    columns = {column2}>
+                </lightning-datatable>
+        </lightning-card>
+    </template>
+    <template if:true={opportunitytrue}>
+        <lightning-card>
+            <b style="text-align: center;">{Opportunity}</b>
+                <lightning-datatable
+                    key-field="id"
+                    data = {oppdata}
+                    columns = {column}>
+                </lightning-datatable>
+        </lightning-card>
+    </template>
+    <template if:true={leadtrue}>
+        <lightning-card>
+            <b style="text-align: center;">{Lead}</b>
+                <lightning-datatable
+                    key-field="id"
+                    data = {leaddata}
+                    columns = {column2}>
+                </lightning-datatable>
+        </lightning-card>
+    </template>
+</template>

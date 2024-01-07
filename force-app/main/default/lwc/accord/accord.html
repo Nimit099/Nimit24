@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Accordion with An Active Section" icon-name="standard:account">
+        
+        <lightning-accordion>
+            <template for:each={acclist} for:item = "acc">
+            <lightning-accordion-section data-id={acc.Id} label={acc.Name} key={acc.Id}>
+
+            </lightning-accordion-section>
+        </template> 
+        </lightning-accordion>
+    </lightning-card>
+</template>

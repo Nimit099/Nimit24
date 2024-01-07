@@ -1,0 +1,31 @@
+<apex:page controller="day_2">
+    <apex:outputText value="{!alert}"/>
+    <apex:form >
+<apex:pageBlock >
+    <apex:pageBlockSection >
+        Email: <apex:inputText value="{!email}"/>
+        Password: <apex:inputSecret value="{!password}"/>
+        <apex:commandButton value="Login" action="{!login}"/>
+    </apex:pageBlockSection>
+</apex:pageBlock>
+
+<!-- <apex:pageBlock>
+        <apex:pageBlockTable value="{!con}" var="c">
+            <apex:column value="{!c.FirstName}"/>
+            <apex:column value="{!c.LastName}"/>            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    <apex:commandButton value="Previous" action="{!previouscon}" />
+    <apex:commandButton value="Next" action="{!nextcon}" />
+    <apex:outputText value="{!page}"/>
+    <apex:pageBlock>
+        <apex:pageBlockTable value="{!opt}" var="o">
+            <apex:column value="{!o.Id}"/>            
+            <apex:column value="{!o.Name}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    <apex:commandButton value="Previous" action="{!previousopt}" />
+    <apex:commandButton value="Next" action="{!nextopt}" />
+    <apex:outputText value="{!page}"/> -->
+</apex:form>
+</apex:page>

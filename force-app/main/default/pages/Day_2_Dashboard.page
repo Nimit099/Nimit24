@@ -1,0 +1,22 @@
+<apex:page controller="day_2">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!con}" var="c">
+            <apex:column value="{!c.FirstName}"/>
+            <apex:column value="{!c.LastName}"/>            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+   
+
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!opt}" var="o">
+            <apex:column value="{!o.Id}"/>            
+            <apex:column value="{!o.Name}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+
+    <apex:commandButton value="Previous" rendered="true" action="{!previouscon}" />
+    <apex:commandButton value="Next" rendered="true" action="{!nextcon}" />
+    <apex:outputText value="{!alert}"/>
+</apex:form>
+</apex:page>

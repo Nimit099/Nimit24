@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+        <lightning-file-upload
+            label="Upload Photo"
+            name="fileUploader"
+            accept={acceptedFormats}
+            record-id={myRecordId}
+            onuploadfinished={handleUploadFinished}
+        ></lightning-file-upload>
+    </lightning-card>
+    <c-lwc_task_1child imageurl ={cvId} imagename = {imagename}></c-lwc_task_1child>
+</template>

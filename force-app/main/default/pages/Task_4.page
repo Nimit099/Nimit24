@@ -1,0 +1,22 @@
+<apex:page controller="Task_4_controller">
+    <apex:form >
+        <apex:outputText value="Total Record in Contacts are {!counts}" />
+        <br/>
+        <apex:pageBlock >
+
+
+            <apex:inputText value="{!searchKey}" label="Input" />
+            <apex:commandButton value="Search records" action="{!search}" />
+            <apex:outputText value="{!count}" />
+
+
+            <apex:pageBlockTable value="{!con}" var="cons">
+                <apex:column value="{!cons.FirstName}" />
+                <apex:column value="{!cons.LastName}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <apex:commandButton value="Previous" action="{!previous}" />
+        <apex:commandButton value="Next" action="{!next}" />
+        <apex:outputText value="{!page}" />
+    </apex:form>
+</apex:page>

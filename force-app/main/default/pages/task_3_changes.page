@@ -1,0 +1,15 @@
+<apex:page StandardController="Account" recordSetVar="records">
+    <apex:pageBlock >
+        <apex:repeat value="{!records}" var="record">   
+            <apex:pageBlockSection collapsible="true" title="{!record.name}">
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:repeat value="{!record.Contacts}" rendered="true" var="contact">
+                        <apex:outputText value="{!contact.name}" />
+                        <br/>
+                    </apex:repeat>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:repeat>
+    </apex:pageBlock>
+</apex:page>

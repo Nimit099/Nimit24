@@ -1,0 +1,16 @@
+<template>
+        <lightning-card>
+            <!-- <lightning-file-upload
+                label="Upload Photo"
+                onuploadfinished={upload}
+            ></lightning-file-upload> -->
+
+            <lightning-input type="file" onchange={uploadFile} label="Upload Photo"></lightning-input>
+            
+        </lightning-card>
+        <lightning-carousel-image
+            src={photos}
+        ></lightning-carousel-image>
+   <lightning-button label="Previous" onclick={previous}></lightning-button>
+   <lightning-button label="Next" onclick={next} ></lightning-button>
+</template>

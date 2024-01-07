@@ -1,0 +1,78 @@
+<aura:component controller = "aura_task_5" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+    <aura:attribute type="String" name="backgroundColors" default="#FFFFFF"/>
+    <aura:attribute type="String" name="fontColor" default="#000000"/>
+    <aura:attribute type="String" name="image"/>
+    <aura:attribute type="String" name="fontsize"/>
+    <aura:attribute type="String" name="fontsizes"/>
+    <aura:attribute type="String" name="description"/>
+    <aura:attribute type="String" name="height" default="380px"/>
+    <aura:attribute type="boolean" name="check" default="false"/>
+    <aura:attribute type="Integer" name="integer" default="01"/>
+    <aura:handler name ="init" value="{!this}" action="{!c.getuser}"/>
+
+        <div class="slds-size_medium">
+    <lightning:card>
+        <aura:renderIf isTrue="true">
+            <!-- Image -->
+            <lightning:input class="slds-size--1-of-2 slds-p-horizontal_x-small" 
+            label="Image url" 
+            aura:id="image" 
+            onchange="{!c.image}" 
+            type="Search" 
+            name="file"
+            value="{!v.image}"/>   
+            
+            <!-- Background color -->
+            <lightning:input type="color"
+            label="Background Color"
+            name="backgroundColor"
+            class="slds-size--1-of-2 slds-p-horizontal_x-small"
+            value="{!v.backgroundColors}"
+            onchange="{!c.backgroundColor}"/>
+
+            <!-- Description -->
+            <lightning:textarea
+            label="Description"
+            aura:id="description"
+            type="TextArea"
+            onchange="{!c.description}"
+            class="slds-size--1-of-2 slds-p-horizontal_x-small"/>
+
+            <!-- font size -->
+            <lightning:input
+            label="Font Size"
+            type="String"
+            aura:id="fontsize"
+            onchange="{!c.fontsize}"
+            value="{!v.fontsize}"
+            class="slds-size--1-of-2 slds-p-horizontal_x-small"/> 
+
+            <!-- Font color -->
+            <lightning:input type="color"
+            label="Font Color"
+            name="fontColor"
+            class="slds-size--1-of-2 slds-p-horizontal_x-small"
+            value="{!v.fontColor}"/>
+            <!-- {!v.fontColor} -->
+        </aura:renderIf>
+    </lightning:card>
+    </div>
+   
+    <aura:renderIf isTrue="{!v.check}">
+    <div class="" aura:id ="card1" style="width: 60%; margin-left:320px; margin-top:-385px;">
+
+    <!-- <lightning:carouselImage
+        src="{!v.image}"
+        description="{!v.description}"
+        alternativeText="This is a card">
+    </lightning:carouselImage> -->
+    
+    <div class="testDiv"
+         style="{! 'background-color: ' + v.backgroundColors + '; color: ' + v.fontColor + '; font-size: ' + v.fontsize +'; height:'+ v.height +'; margin-top:+ -45px +'}">
+         <img src="{!v.image}" height="250"/>
+        <p style="{! 'font-size: '+v.fontsizes+';'}">{!v.description}</p>
+    </div>
+</div>
+</aura:renderIf>
+https://images.unsplash.com/photo-1670100475746-d9cb673285b8?crop=entropy\u0026cs=tinysrgb\u0026fm=jpg\u0026ixid=MnwzODI4NTl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzA4MzU4MjA\u0026ixlib=rb-4.0.3\u0026q
+</aura:component>

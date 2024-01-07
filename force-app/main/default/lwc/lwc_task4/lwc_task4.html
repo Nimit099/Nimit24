@@ -1,0 +1,88 @@
+<template>
+    <!-- ==========First section======== -->
+    <template if:true={first}>
+        <lightning-card>
+            <lightning-combobox
+                options={option}
+                onchange={selectobject}
+                placeholder="Select Object"
+                label="Object"
+                value={value}
+                ></lightning-combobox>
+        </lightning-card>
+        <template if:true={trueacc}>
+            <lightning-card>
+                <lightning-datatable
+                    key-field="Id"
+                    data={accounts}
+                    columns={column}
+                    value={accounts}
+                    onrowselection={select}
+                ></lightning-datatable>
+            </lightning-card>
+        </template>
+        <template if:true={truecon}>
+            <lightning-card>
+                <lightning-datatable
+                    key-field="Id"
+                    data={contacts}
+                    columns={column}
+                    value={contacts}
+                    onrowselection={select}
+                ></lightning-datatable>
+            </lightning-card>
+        </template>
+        <template if:true={truelead}>
+            <lightning-card>
+                <lightning-datatable
+                    key-field="Id"
+                    data={leads}
+                    columns={column}
+                    value={leads}
+                    onrowselection={select}
+                ></lightning-datatable>
+            </lightning-card>
+        </template>
+        <lightning-button label="Previous" onclick={previous} disabled={first}></lightning-button>
+        <lightning-button label="Next" onclick={next} disabled={third}></lightning-button>
+    </template>
+    <!-- ========Second section========= -->
+    <template if:true={second}>
+            <lightning-card>
+                <div style="text-align: center; font-size: medium;">    
+                    <b>EMAIL</b>
+                </div>
+                <div>
+                    <b>Subject:</b><lightning-input value={subject} onchange={subjects} placeholder="Subject"></lightning-input>
+                    <b>Body:</b><lightning-input-rich-text placeholder="Mail" value={body} onchange={bodies} aria-required=true variant="bottom-toolbar"></lightning-input-rich-text>
+                </div>
+            </lightning-card>
+        <lightning-button label="Previous" onclick={previous} disabled={first}></lightning-button>
+        <lightning-button label="Next" onclick={next} disabled={third}></lightning-button>
+    </template>
+    <!-- ========Third Section======= -->
+    <template if:true={third}>
+        <lightning-card>
+                FROM:<br/>
+                    <lightning-formatted-email value={email}></lightning-formatted-email>
+                <br/><br/>
+                TO:<br/>
+                    <template for:each={emails} for:item="a" >
+                        <lightning-formatted-email key={a.email} value={a}></lightning-formatted-email>
+                    </template>
+                <br/><br/>  
+                Subject:<br/>
+                    <lightning-formatted-text value={subject}></lightning-formatted-text>
+                <br/><br/>
+                Mail:<br/>
+                    <lightning-formatted-rich-text value={body}></lightning-formatted-rich-text>
+            </lightning-card>
+        <lightning-button label="Previous" onclick={previous} disabled={first}></lightning-button>
+        <lightning-button label="Send" onclick={next}></lightning-button>
+    </template>
+    <template if:true={fourth}>
+        <lightning-card>
+            <b>Email Send!!</b>
+        </lightning-card>
+    </template>
+</template>

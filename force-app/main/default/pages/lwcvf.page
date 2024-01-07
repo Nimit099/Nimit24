@@ -1,0 +1,13 @@
+<apex:page applyBodyTag="false" showHeader="false" standardController="Account">
+<apex:includeLightning />
+    <div id = "lwcvf"></div>
+
+    <script>
+        $Lightning.use("c:lwc_app", function(){
+            $Lightning.createComponent("c:lwc_task_2", { "recordId" : "{!Account.Id}"},
+            "lwcvf", function(cmp){
+                 
+            });
+        }); 
+    </script>
+</apex:page>

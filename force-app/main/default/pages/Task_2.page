@@ -1,0 +1,12 @@
+<apex:page controller="Task_2_controller">
+    <apex:form >
+        
+        FirstName:<br/>
+        <apex:inputField value="{!con.FirstName}" /><br/>
+        LastName:<br/>
+        <apex:inputField value="{!con.LastName}" /><br/>
+        Email:<br/>
+        <apex:inputField value="{!con.Email}" /><br/>
+        <apex:commandButton action="{!save}" value="Insert" /><br/>
+    </apex:form>
+</apex:page>

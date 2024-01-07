@@ -1,0 +1,18 @@
+<template>
+	<lightning-card variant="Narrow" title="CSVMaker" >
+		<div class="mainbody">
+			<div class="objectselection">
+				<lightning-combobox name="progress" label="Object" value={objectselect} placeholder="-- SELECT --"
+					options={objectlist} onchange={objectselected}></lightning-combobox>
+			</div>
+			<div class="fieldselection">
+				<lightning-datatable key-field="id" data={fieldList} columns={columns}>
+				</lightning-datatable>
+			</div>
+		</div>
+		<p slot="footer" class="footer">
+			<lightning-button label="Generate CSV" title="Generate CSV" onclick={generateCSV}>
+			</lightning-button>
+		</p>
+	</lightning-card>
+</template>

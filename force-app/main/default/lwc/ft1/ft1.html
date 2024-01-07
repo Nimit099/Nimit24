@@ -1,0 +1,64 @@
+<template>
+    <div style="text-align: center;">
+        <lightning-card>
+            <b>{Name}</b>
+        </lightning-card>
+    </div>
+
+    <div style="margin-top:10px;">
+        <lightning-card>
+            <table>
+                <tr>
+                    <th style="border: 1px solid black; text-align: center;">Cash <lightning-icon icon-name="custom:custom17"></lightning-icon></th>
+                    <th style="border: 1px solid black; text-align: center;">Bank <lightning-icon icon-name="custom:custom16"></lightning-icon></th>
+                    <th style="border: 1px solid black; text-align: center;">Stock <lightning-icon icon-name="custom:custom102"></lightning-icon></th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center;">{cash}</td>
+                    <td style="border: 1px solid black; text-align: center;">{bank}</td>
+                    <td style="border: 1px solid black; text-align: center;">{stock}</td>
+                </tr>
+            </table>
+        </lightning-card>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <lightning-card>
+            <table >
+                <tr style="border: 1px solid black;">
+                    <th style="text-align: center; font-size: large;" colspan="2">Cash</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; text-align: center; color: green;">Credit</th>
+                    <th style="border: 1px solid black; text-align: center; color: red;">Debit</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center; color: green;">{creditcash}</td>
+                    <td style="border: 1px solid black; text-align: center; color: red;">{debitcash}</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <th style="text-align: center; font-size: large;" colspan="2">Bank</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; text-align: center; color: green;">Credit</th>
+                    <th style="border: 1px solid black; text-align: center; color: red;">Debit</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center; color: green;">{creditbank}</td>
+                    <td style="border: 1px solid black; text-align: center; color: red;">{debitbank}</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <th style="text-align: center; font-size: large;" colspan="2">Stock</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; text-align: center; color: green;">Credit</th>
+                    <th style="border: 1px solid black; text-align: center; color: red;">Debit</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: center; color: green;">{creditstock}</td>
+                    <td style="border: 1px solid black; text-align: center; color: red;">{debitstock}</td>
+                </tr>
+            </table>
+        </lightning-card>
+    </div>
+</template>
