@@ -3,15 +3,5 @@
     <autoResponseRule>
         <fullName>first rule</fullName>
         <active>true</active>
-        <ruleEntry>
-            <criteriaItems>
-                <field>Lead.City</field>
-                <operation>equals</operation>
-                <value>ahmedabad</value>
-            </criteriaItems>
-            <senderEmail>nimitshah099@gmail.com</senderEmail>
-            <senderName>Nimit</senderName>
-            <template>unfiled$public/SalesNewCustomerEmail</template>
-        </ruleEntry>
     </autoResponseRule>
 </AutoResponseRules>

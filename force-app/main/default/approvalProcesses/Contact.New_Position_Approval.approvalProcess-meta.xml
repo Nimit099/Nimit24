@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
     <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
@@ -13,12 +13,6 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
-        <approvalActions>
-            <action>
-                <name xsi:nil="true"/>
-                <type>Alert</type>
-            </action>
-        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>manager@gmai.co</name>
@@ -32,26 +26,8 @@
     <description>All positions must be approved by the recruiter&apos;s manager and two to three other approvers. These approvers are tracked in approver fields on the Position object.</description>
     <emailTemplate>unfiled$public/CommunityLockoutEmailTemplate</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
-    <finalApprovalActions>
-        <action>
-            <name xsi:nil="true"/>
-            <type>FieldUpdate</type>
-        </action>
-    </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
-    <finalRejectionActions>
-        <action>
-            <name xsi:nil="true"/>
-            <type>FieldUpdate</type>
-        </action>
-    </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <initialSubmissionActions>
-        <action>
-            <name xsi:nil="true"/>
-            <type>FieldUpdate</type>
-        </action>
-    </initialSubmissionActions>
     <label>New Position Approval</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>

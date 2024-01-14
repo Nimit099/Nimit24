@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fieldSets>
-        <label></label>
-        <name>Account</name>
-    </fieldSets>
-    <fieldSets>
-        <label></label>
-        <name>Account1</name>
-    </fieldSets>
     <recordTypes>
         <description>Un compte représentant un foyer comptant un ou plusieurs individus</description>
         <label>Compte de foyer</label>
@@ -18,14 +10,6 @@
         <label>Organisation</label>
         <name>Organization</name>
     </recordTypes>
-    <validationRules>
-        <errorMessage></errorMessage>
-        <name>Date</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage></errorMessage>
-        <name>Test</name>
-    </validationRules>
     <webLinks>
         <label></label>
         <name>Billing</name>

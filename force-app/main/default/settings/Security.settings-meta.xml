@@ -7,12 +7,7 @@
     <enableCoepHeader>false</enableCoepHeader>
     <enableCoopHeader>false</enableCoopHeader>
     <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
-    <networkAccess>
-        <ipRanges>
-            <end>182.69.31.146</end>
-            <start>182.69.31.146</start>
-        </ipRanges>
-    </networkAccess>
+    <networkAccess/>
     <passwordPolicies>
         <complexity>AlphaNumeric</complexity>
         <expiration>NinetyDays</expiration>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <customButtons>Task_3</customButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>CreateSalesChannel</excludeButtons>
     <excludeButtons>OpportunityMultiAddToCadence</excludeButtons>
@@ -146,14 +145,7 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns>
-            <layoutItems>
-                <customLink>Task</customLink>
-            </layoutItems>
-            <layoutItems>
-                <customLink>DeliveryStatus</customLink>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
