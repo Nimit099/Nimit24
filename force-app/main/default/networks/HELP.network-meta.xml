@@ -30,10 +30,7 @@
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <headlessForgotPasswordTemplate>unfiled$public/CommunityHeadlessForgotPasswordTemplate</headlessForgotPasswordTemplate>
-    <networkMemberGroups>
-        <profile>Admin</profile>
-        <profile>Custom%3A Support Profile</profile>
-    </networkMemberGroups>
+    <networkMemberGroups/>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
         <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>

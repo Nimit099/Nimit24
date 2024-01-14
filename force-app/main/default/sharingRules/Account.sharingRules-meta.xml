@@ -1,17 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
-    <sharingGuestRules>
-        <fullName>Guest_user</fullName>
-        <accessLevel>Read</accessLevel>
-        <label>Guest user</label>
-        <sharedTo>
-            <guestUser>NIM_S</guestUser>
-        </sharedTo>
-        <criteriaItems>
-            <field>Name</field>
-            <operation>notEqual</operation>
-            <value>null</value>
-        </criteriaItems>
-        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
-    </sharingGuestRules>
-</SharingRules>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
+

@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fieldSets>
-        <label></label>
-        <name>Account</name>
-    </fieldSets>
-    <fieldSets>
-        <label></label>
-        <name>Account1</name>
-    </fieldSets>
-    <quickActions>
-        <label></label>
-        <name>New</name>
-    </quickActions>
     <recordTypes>
         <description>Een Account die een Huishouden met één of meerdere individuen voorstelt</description>
         <label>Huishoudenaccount</label>
@@ -22,14 +10,6 @@
         <label>Organisatie</label>
         <name>Organization</name>
     </recordTypes>
-    <validationRules>
-        <errorMessage></errorMessage>
-        <name>Date</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage></errorMessage>
-        <name>Test</name>
-    </validationRules>
     <webLinks>
         <label></label>
         <name>Billing</name>

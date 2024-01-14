@@ -13,12 +13,6 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>approved_by_manager</name>
-                <type>Alert</type>
-            </action>
-        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>manager@gmai.co</name>
@@ -32,26 +26,8 @@
     <description>All positions must be approved by the recruiter&apos;s manager and two to three other approvers. These approvers are tracked in approver fields on the Position object.</description>
     <emailTemplate>unfiled$public/CommunityLockoutEmailTemplate</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
-    <finalApprovalActions>
-        <action>
-            <name>final_approved</name>
-            <type>FieldUpdate</type>
-        </action>
-    </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
-    <finalRejectionActions>
-        <action>
-            <name>final_rejected</name>
-            <type>FieldUpdate</type>
-        </action>
-    </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <initialSubmissionActions>
-        <action>
-            <name>Initial_step</name>
-            <type>FieldUpdate</type>
-        </action>
-    </initialSubmissionActions>
     <label>New Position Approval</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>

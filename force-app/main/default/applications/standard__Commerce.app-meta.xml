@@ -21,12 +21,8 @@
     <tabs>standard-Order</tabs>
     <tabs>standard-OrderSummary</tabs>
     <tabs>standard-CommerceSetup</tabs>
-    <tabs>Teste</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
-        <mappings>
-            <tab>Teste</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>
